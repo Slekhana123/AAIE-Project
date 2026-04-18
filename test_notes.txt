@@ -1,0 +1,3 @@
+Tested input validation
+Checked different formats
+Understanding parser behaviour
