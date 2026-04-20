@@ -1,10 +1,15 @@
-# LLM Similarity Check - Parser Testing (Basic)
+# LLM Similarity Check - Parser Testing
 
 student_input = "AI helps students learn better"
 
-# Simulated validation
-if student_input:
-    print("Input is valid")
-    print("Processing for similarity analysis...")
+# Remove spaces
+cleaned_input = student_input.strip()
+
+# Validation
+if not cleaned_input:
+    print("Invalid input: Blank")
+elif len(cleaned_input) < 5:
+    print("Invalid input: Too short")
 else:
-    print("Invalid input")
+    print("Valid input")
+    print("Processing for similarity analysis...")
